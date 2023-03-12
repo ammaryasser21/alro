@@ -1,0 +1,419 @@
+/* Start Global */
+body {
+   font-family: "Poppins", sans-serif;
+}
+p {
+   font-family: "Mulish", sans-serif;
+}
+h1 {
+   font-family: "Montserrat", sans-serif;
+}
+ul {
+   list-style: none;
+}
+a {
+   text-decoration: none;
+}
+:root {
+   --color-pink: #e65f78;
+   --color-section: #f9f9f9;
+}
+@media (max-width: 575.98px) {
+   :root {
+      font-size: 14px;
+   }
+}
+.text-pink {
+   color: var(--color-pink);
+}
+.bg-pink {
+   background-color: var(--color-pink);
+}
+.bg-section {
+   background-color: var(--color-section);
+}
+.bg-opacity-60 {
+   opacity: 0.6;
+}
+.let-space {
+   letter-spacing: 2px;
+}
+.move-line {
+   position: relative;
+   color: #000 !important;
+}
+.move-line::before {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   height: 1px;
+   width: 0;
+   background-color: #333;
+   transition: width 0.4s;
+}
+.move-line:hover::before {
+   width: 100%;
+   left: 0;
+}
+.hover-me {
+   transition: color 0.3s;
+}
+.hover-me:hover {
+   color: var(--color-pink) !important;
+}
+.btn-custom{
+   padding: 0.9rem 2.5rem;
+   border-radius: 0;
+   color: #fff;
+   background-color: var(--color-pink);
+}
+/* End Global */
+/* Start Nav */
+.navbar-brand img {
+   width: 50px;
+}
+.nav-content .nav-link {
+   font-weight: 500;
+   padding: 1.3rem 1rem !important;
+   color: #000 !important;
+   transition: color 0.3s;
+}
+.nav-content :is(.nav-link.active, .nav-link:not(.active):hover) {
+   color: var(--color-pink) !important;
+}
+/* End Nav */
+/* Start Header */
+header {
+   background: url(../images/1.jpg) center;
+   background-size: cover;
+}
+header .content img {
+   width: 180px;
+   height: 180px;
+   border-radius: 50%;
+   filter: blur(0.5px);
+   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2);
+   margin-bottom: 2.5rem;
+}
+header h1 {
+   font-size: 2.8rem;
+   font-weight: 800;
+   margin-bottom: 1rem;
+}
+header h5::after {
+   content: "";
+   animation: text-write 5s infinite linear;
+}
+@keyframes text-write {
+   0% {
+      content: "P";
+   }
+   4% {
+      content: "Ph";
+   }
+   8% {
+      content: "Pho";
+   }
+   12% {
+      content: "Phot";
+   }
+   16% {
+      content: "Photo";
+   }
+   20% {
+      content: "Photog";
+   }
+   24% {
+      content: "Photogr";
+   }
+   28% {
+      content: "Photogra";
+   }
+   32% {
+      content: "Photograp";
+   }
+   36% {
+      content: "Photograph";
+   }
+   40% {
+      content: "Photographe";
+   }
+   50% {
+      content: "Photographer";
+   }
+   51% {
+      content: "Photograph";
+   }
+   52% {
+      content: "Photograp";
+   }
+   53% {
+      content: "Photogra";
+   }
+   54% {
+      content: "Photogr";
+   }
+   55% {
+      content: "Photog";
+   }
+   56% {
+      content: "Photo";
+   }
+   57% {
+      content: "Phot";
+   }
+   58% {
+      content: "Pho";
+   }
+   59% {
+      content: "Ph";
+   }
+   60% {
+      content: "P";
+   }
+   64% {
+      content: "F";
+   }
+   68% {
+      content: "Fr";
+   }
+   72% {
+      content: "Fre";
+   }
+   76% {
+      content: "Free";
+   }
+   80% {
+      content: "Freel";
+   }
+   84% {
+      content: "Freela";
+   }
+   88% {
+      content: "Freelan";
+   }
+   92% {
+      content: "Freelanc";
+   }
+   93% {
+      content: "Freelance";
+   }
+   94% {
+      content: "Freelancer";
+   }
+   95% {
+      content: "Freelance";
+   }
+   96% {
+      content: "Freela";
+   }
+   97% {
+      content: "Freel";
+   }
+   98% {
+      content: "Free";
+   }
+   99% {
+      content: "Fre";
+   }
+   100% {
+      content: "F";
+   }
+}
+header svg {
+   bottom: 40px;
+   animation: icon-move 2s infinite ease-out;
+   padding: 20px;
+}
+@keyframes icon-move {
+   0%,
+   20%,
+   40%,
+   55%,
+   100% {
+      bottom: 40px;
+   }
+   10% {
+      bottom: 60px;
+   }
+   30% {
+      bottom: 50px;
+   }
+   50% {
+      bottom: 45px;
+   }
+}
+/* End Header */
+/* Start about */
+.about .content .image {
+   width: fit-content;
+   position: relative;
+}
+.about .content .image::before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 40px;
+   left: 15px;
+   z-index: -1;
+   border: 8px solid #000;
+}
+.about .content .right h4::after {
+   content: "";
+   animation: text-write 5s infinite linear;
+   color: var(--color-pink);
+}
+.about .content .right li {
+   margin-bottom: 1rem;
+}
+.about .content .right li svg {
+   padding-right: 0.6rem;
+}
+.about .content .right li span {
+   font-weight: 500;
+   font-size: 0.9rem;
+}
+/* End about */
+/* Start Services */
+.services svg {
+   width: 50px;
+   fill: var(--color-pink);
+}
+.services .card:hover {
+   box-shadow: 0 0.5rem 1.3rem rgba(0, 0, 0, 0.2) !important;
+}
+.services .move-line {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* End Services */
+/* Start Protofolio */
+.portfolio .content button {
+   color: #333;
+   font-weight: 500;
+   font-size: 0.88rem;
+}
+.portfolio .content button.active {
+   color: var(--color-pink);
+   background-color: unset;
+}
+.portfolio .content .row [class="position-relative"] {
+   overflow: hidden;
+   transform: scale(0);
+   animation: gallary-photo 0.4s ease-in-out forwards;
+}
+@keyframes gallary-photo {
+   0% {
+      transform: scale(0);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+.portfolio .content .tab-pane.active .row [class="position-relative"] {
+   animation: gallary-photo 0.4s ease-in-out forwards;
+}
+.portfolio .content .row [class="position-relative"] img {
+   transition: transform 0.3s;
+}
+.portfolio .content .row [class="position-relative"] img:hover {
+   transform: scale(1.15);
+}
+.portfolio .content .row [class="position-relative"]::after,
+.portfolio .content .row [class="position-relative"]::before {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%);
+   background-color: #fff;
+   padding: 5px;
+   white-space: nowrap;
+   display: none;
+   z-index: 10;
+}
+.portfolio .content .row [class="position-relative"]:hover::after,
+.portfolio .content .row [class="position-relative"]:hover::before {
+   display: block;
+}
+.portfolio .content .row [class="position-relative"]::after {
+   content: attr(data-photo-title);
+}
+.portfolio .content .row [class="position-relative"]::before {
+   content: attr(data-photo-sub);
+   top: 60%;
+}
+/* End Protofolio */
+/* Start layer-section */
+.layer-section::after,
+.layer-section::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+}
+.layer-section::after {
+   background-image: url(../images/ravenna.png);
+   opacity: 0.4;
+   z-index: -1;
+}
+.layer-section::before {
+   background-color: #000;
+   z-index: -1;
+}
+.layer-section h2 {
+   font-size: 2.5rem;
+   font-weight: 600;
+}
+/* End layer-section */
+/* End Start */
+.news .content .card {
+   background-color: transparent;
+}
+.news .content button {
+   position: absolute;
+   border: none;
+   background-color: transparent;
+   color: #fff;
+   font-size: 2.5rem;
+   left: 102%;
+   top: -10px;
+   z-index: 1055;
+   pointer-events: painted;
+}
+@media (max-width: 767.98px) {
+   .news .content button {
+      left: 0;
+      top: 0;
+      color: #000;
+   }
+}
+.news .content .image img {
+   transition: transform 0.4s;
+}
+.news .content .image:hover img {
+   transform: scale(1.2) rotate(5deg);
+}
+/* End News */
+/* Start Contact */
+.contact textarea {
+   resize: none;
+   height: 160px !important;
+}
+.contact :is(input,textarea) {
+   color: #777 !important;
+   font-size: .9rem;
+}
+/* End Contact */
+/* Start footer */
+footer {
+   background: url(../images/550x650.jpg);
+   color: #ccc;
+}
+footer h6 {
+   font-size: .85rem;
+   font-weight: 500;
+}
+footer svg {
+   padding-left: 1rem;
+}
+/* End footer */
